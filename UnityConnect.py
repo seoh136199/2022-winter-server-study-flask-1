@@ -18,6 +18,8 @@ def get():
     if (result == None):
         return "False", 200
     elif (result['password'] != pw):
+        print(len(result['password']))
+        print(len(pw))
         return "False", 200
     else:
         return "True", 200
