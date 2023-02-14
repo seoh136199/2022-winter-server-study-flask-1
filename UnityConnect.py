@@ -4,9 +4,9 @@ from database import Database
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
-def get(self):
+def get():
     id = request.args.get("id")
-    pw = request.args.get("password")
+    pw = request.args.get("pw")
 
     db = Database()
     sql = "SELECT * FROM user where id = %s"
