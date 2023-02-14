@@ -16,9 +16,9 @@ def get():
     db.close()
 
     if (result == None):
-        return "False", 400
+        return "False", 200
     elif (result['password'] != pw):
-        return "False", 400
+        return "False", 200
     else:
         return "True", 200
 
